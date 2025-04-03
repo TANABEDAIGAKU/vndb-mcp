@@ -12,7 +12,7 @@ Visual Novel Database (VNDB) APIにアクセスするためのModel Context Prot
 
 ```bash
 # GitHubからクローン
-git clone https://github.com/あなたのユーザー名/vndb-mcp.git
+git clone https://github.com/TANABEDAIGAKU/vndb-mcp.git
 cd vndb-mcp
 
 # 依存関係のインストール
