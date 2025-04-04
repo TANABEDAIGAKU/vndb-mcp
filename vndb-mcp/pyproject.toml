@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vndb-mcp"
+version = "0.1.0"
+description = "MCP server for VNDB API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "mcp>=1.6.0",
+    "azaka>=0.1.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.18.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vndb_mcp"]
+
+[project.scripts]
+vndb-mcp = "vndb_mcp.__main__:main"
