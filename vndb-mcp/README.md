@@ -1,19 +1,19 @@
 # VNDB MCP Server
 
-Visual Novel Database (VNDB) APIにアクセスするためのModel Context Protocol (MCP) サーバー。このサーバーを使用することで、Claude AIがVNDBのデータにアクセスできるようになります。
+A Model Context Protocol (MCP) server for accessing the Visual Novel Database (VNDB) API. This server allows Claude AI to access VNDB data.
 
 ## 機能
 
-- ビジュアルノベルの検索
-- ビジュアルノベルの詳細情報の取得
-- キャッシング機能によるAPIリクエスト最適化
+- Search for visual novels
+- Get detailed information about visual novels
+- API request optimization through caching functionality
 
 ## インストール方法
 
 ```bash
-# GitHubからクローン
+# Clone from GitHub
 git clone https://github.com/TANABEDAIGAKU/vndb-mcp
 cd vndb-mcp
 
-# 依存関係のインストール
+# Install dependencies
 pip install -e .
