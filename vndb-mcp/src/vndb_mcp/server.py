@@ -4,7 +4,7 @@ import logging
 from mcp.server.models import InitializationOptions
 import mcp.types as types
 from mcp.server import NotificationOptions, Server
-from pydantic import AnyUrl
+from pydantic import AnyUrl, parse_obj_as
 import mcp.server.stdio
 # Add imports for VNDB API client
 from azaka import Client, Node, select
