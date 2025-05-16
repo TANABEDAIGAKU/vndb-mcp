@@ -31,12 +31,12 @@ async def handle_list_resources() -> list[types.Resource]:
     Each note is exposed as a resource with a custom note:// URI scheme.
     """
     return [
-        types.Resource(
-            uri=AnyUrl(f"note://internal/{name}"),
-            name=f"Note: {name}",
-            description=f"A simple note named {name}",
-            mimeType="text/plain",
-        )
+        types.Resource(␊
+            uri=parse_obj_as(AnyUrl, f"note://internal/{name}"),
+            name=f"Note: {name}",␊
+            description=f"A simple note named {name}",␊
+            mimeType="text/plain",␊
+        )␊
         for name in notes
     ]
 
